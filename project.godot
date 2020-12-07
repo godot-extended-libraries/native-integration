@@ -1,0 +1,34 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Resource",
+"class": "GDNativeSolution",
+"language": "GDScript",
+"path": "res://addons/silicon.util.gdnative_helper/native_solution/gd_native_solution.gd"
+} ]
+_global_script_class_icons={
+"GDNativeSolution": "res://addons/silicon.util.gdnative_helper/native_solution/gd_native_solution.svg"
+}
+
+[application]
+
+config/name="GDNative Helper Plugin"
+run/main_scene="res://demo/TestScene.tscn"
+config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "editor_icon_previewer", "godot-plugin-refresher", "silicon.util.gdnative_helper" )
+
+[rendering]
+
+vram_compression/import_etc=true
+environment/default_environment="res://default_env.tres"
